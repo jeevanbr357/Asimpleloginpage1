@@ -12,7 +12,7 @@ This project is a simple login page designed using HTML and CSS. The page includ
 
 ## Instructions to Run the Project
 1. Clone the repository to your local machine:
-git https://github.com/jeevanbr357/Asimpleloginpage.git
+git https://github.com/jeevanbr357/Asimpleloginpage1.git
 
 2. Navigate to the project directory:
  cd Asimpleloginpage
