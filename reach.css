@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff6b6b, #ffcc33, #33cc95);
+    background-size: 300% 300%;
+    animation: gradient-animation 8s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Gradient Animation for Background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Message Container */
+.message-container {
+    text-align: center;
+    animation: fade-in 1.5s ease-in-out forwards;
+}
+
+/* Animated Box */
+.animated-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: pop-in 0.7s ease-in-out forwards;
+    transform: scale(0);
+}
+
+/* Pop-In Animation */
+@keyframes pop-in {
+    0% { transform: scale(0); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Fade-In Animation */
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Header Styling */
+.animated-box h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.animated-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Back to Login Button */
+.back-to-login {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-to-login:hover {
+    background-color: #ff3c3c;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .animated-box {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,122 @@
+/* Reset body margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff4785);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 10s ease infinite;
+    overflow: hidden;
+    color: white;
+  }
+  
+  /* Container styling */
+  .welcome-container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Glowing welcome text */
+  .welcome-text {
+    font-size: 4rem;
+    margin: 0;
+    animation: glow 1.5s ease-in-out infinite;
+    text-shadow: 0 0 20px #ff4584, 0 0 30px #ff457b, 0 0 40px #ff4572;
+  }
+  
+  /* Subtitle styling */
+  .subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInSubtitle 3s ease-in-out forwards;
+  }
+  
+  /* Explore button */
+  .explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #ff457b, #ff758c);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .explore-button:hover {
+    background: linear-gradient(90deg, #ff758c, #ff457b);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Background animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Text glow animation */
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+    }
+    50% {
+      text-shadow: 0 0 30px #ff8b9b, 0 0 40px #ff8b8f, 0 0 50px #ff8b83;
+    }
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Subtitle fade-in animation */
+  @keyframes fadeInSubtitle {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button pulse animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+  

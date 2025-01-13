@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #3a3d40, #181818, #2e86c1);
+    background-size: 300% 300%;
+    animation: gradient-animation 8s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Forgot Password Container */
+.forgot-password-container {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.forgot-password-container h2 {
+    margin-bottom: 20px;
+    color: #fcfeff;
+}
+
+.forgot-password-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2e86c1;
+    box-shadow: 0 0 5px rgba(46, 134, 193, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7573ba;
+}
+
+/* Back to Login Link */
+.back-to-login {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #2e86c1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-login:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .forgot-password-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

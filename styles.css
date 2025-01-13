@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #000000, #979d66, #ff00b7);
+    background-size: 300% 300%;
+    animation: gradient-animation 8s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Gradient Animation for Background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Login Container */
+.login-container {
+    background: linear-gradient(120deg, #ffffff, #845b88, #ff00ff);
+    background-size: 300% 300%;
+    animation: container-animation 6s infinite;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Gradient Animation for Login Container */
+@keyframes container-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #121212;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px;
+    background-color: #040404;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+    font-size: 14px;
+    color: #040404;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Social Media Icons Styling */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+/* Sign Up Link Styling */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #040404;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
